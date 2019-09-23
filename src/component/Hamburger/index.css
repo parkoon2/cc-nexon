@@ -1,0 +1,22 @@
+.hamburger {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hamburger div {
+  position: absolute;
+  background: #000;
+  width: 17px;
+  height: 2px;
+}
+
+.hamburger div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger div:nth-child(3) {
+  bottom: 0;
+}
