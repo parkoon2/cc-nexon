@@ -1,0 +1,66 @@
+.card-box {
+  /* width: 25%; */
+  width: 153px;
+  background: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.card-box:hover {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+.card-box .image-container {
+  overflow: hidden;
+  height: 192px;
+}
+
+.card-box .image-container .card-image {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/sample-card.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s;
+}
+
+.card-box:hover .image-container .card-image {
+  transform: scale(1.2);
+}
+
+.card-box .card-info {
+  margin: 0 20px;
+  padding: 14px 0;
+}
+
+.card-box .card-info .title {
+  padding: 7px 0;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+.card-box .card-info .sub-title {
+  font-size: 13px;
+  color: gray;
+}
+
+.card-box .card-info .sub-title .event {
+  color: #17191d;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.card-box .type {
+  font-size: 12px;
+  color: gray;
+  border-top: 1px solid gray;
+  margin: 0px 20px;
+  padding: 8px 0;
+}
+
+.card-box .type i {
+  margin-right: 7px;
+}

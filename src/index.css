@@ -1,10 +1,12 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background: #f8f9fa;
 }
 
 ul,
-p {
+p,
+h2 {
   margin: 0;
   padding: 0;
 }

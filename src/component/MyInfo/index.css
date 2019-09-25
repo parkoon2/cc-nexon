@@ -1,0 +1,137 @@
+.my-info {
+}
+
+.my-info .my-info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 67px 0 30px 0;
+}
+
+.my-info-title h2 {
+}
+
+.my-info-title span {
+}
+
+.my-info-body {
+  display: flex;
+}
+
+.my-info-body .recommend-card-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 805px;
+}
+.my-info-body .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  width: 465px;
+}
+
+.login .login-btn {
+  background: #17191d;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 7px;
+  width: 353px;
+  height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login .login-btn:hover {
+  background: #1f618d;
+}
+
+.login .login-once {
+  display: inline-block;
+  width: 176px;
+  height: 52px;
+  background: #4a4257;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 17px 0px;
+  margin-right: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login .login-once:hover {
+  background: #1f618d;
+}
+
+.login .login-qr {
+  display: inline-block;
+  width: 176px;
+  height: 52px;
+  background: #4a4257;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 17px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login .login-qr:hover {
+  background: #1f618d;
+}
+
+.login .login-sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: gray;
+  width: 353px;
+  height: 42px;
+  background: #f8f9f6;
+  margin-top: 24px;
+}
+
+.login .login-sns .social-icons {
+  margin-left: 14px;
+}
+
+.login .login-sns .social-icons i {
+  margin-right: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login .login-sns .social-icons i:hover {
+  color: #1f618d;
+}
+
+.login .etc {
+  display: flex;
+  justify-content: space-between;
+  width: 353px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.login .etc a {
+  color: gray;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.login .etc a:hover {
+  color: #1f618d;
+}
+
+.login .etc .find a:first-child {
+  margin-right: 13px;
+}
