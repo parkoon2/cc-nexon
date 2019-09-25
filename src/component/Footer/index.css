@@ -1,0 +1,155 @@
+footer {
+  margin-top: 200px;
+  background-color: #222426;
+}
+
+footer .notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 37px;
+  border-bottom: 1px solid gray;
+}
+
+footer .notice .social-icons i {
+  margin-left: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+footer .notice .social-icons i:hover {
+  color: #1f618d;
+}
+
+footer .notice .title a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+footer .notice .title a:hover {
+  text-decoration: underline;
+}
+
+/*------- Footer - Nav --------*/
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 37px;
+}
+
+footer nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+footer nav .nav-list li {
+  position: relative;
+  margin-right: 20px;
+  padding-right: 20px;
+  line-height: 29px;
+}
+
+footer nav .nav-list li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50%;
+  background: gray;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+footer nav .nav-list li a {
+  transition: 0.2s;
+}
+footer nav .nav-list li a:hover {
+  color: #1f618d;
+}
+
+footer nav .nav-list li:last-child::after {
+  display: none;
+}
+
+footer nav .nav-list li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: gray;
+}
+
+/*------- Footer - Nav - Language -------*/
+footer nav .language {
+  padding: 7px 12px;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+footer nav .language .selected-language:hover span,
+footer nav .language .selected-language:hover i {
+  color: #1f618d;
+}
+
+footer nav .language span {
+  margin-right: 55px;
+  color: gray;
+}
+
+footer nav .language .language-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  bottom: 29px;
+  left: 0;
+  background-color: #17191d;
+  transition: all 0.2s linear;
+  list-style: none;
+  padding: 7px 12px;
+  box-sizing: border-box;
+  color: gray;
+  opacity: 0;
+  visibility: hidden;
+}
+
+footer nav .language .language-list li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+footer nav .language .language-list li:hover {
+  color: #1f618d;
+}
+
+footer nav .language.open .language-list {
+  opacity: 1;
+  visibility: initial;
+}
+
+footer nav .language i {
+  color: gray;
+}
+
+/* ------- Footer - address ------- */
+footer .address {
+  padding: 0px 37px;
+  font-size: 12px;
+  color: gray;
+  line-height: 17px;
+}
+
+/* ------- Footer - LOGO ------- */
+footer .logo {
+  width: 100px;
+  padding-left: 15px;
+}
+
+footer .logo img {
+  width: 100%;
+}

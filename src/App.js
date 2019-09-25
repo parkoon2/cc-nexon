@@ -7,12 +7,14 @@ import Banner from "./component/Banner";
 
 // Dummy Data
 import banners from "./dummy/banners";
+import Footer from "./component/Footer";
 
 function App() {
   return (
     <div>
       <Header />
       <Banner banners={banners} />
+      <Footer />
     </div>
   );
 }
