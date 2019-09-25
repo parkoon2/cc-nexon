@@ -10,6 +10,7 @@ import banners from "./dummy/banners";
 import Footer from "./component/Footer";
 import MyInfo from "./component/MyInfo";
 import Container from "./component/Shared/container";
+import AllGames from "./component/AllGame";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Banner banners={banners} />
       <Container>
         <MyInfo />
+        <AllGames />
       </Container>
       <Footer />
     </div>
