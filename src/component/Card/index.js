@@ -1,8 +1,14 @@
 import React from "react";
 import "./index.css";
-const Card = () => {
+const Card = props => {
   return (
-    <div className="card-box">
+    <div
+      className="card-box"
+      style={{
+        width: props.width,
+        marginBottom: props["mb"] && "60px"
+      }}
+    >
       <div className="image-container">
         <div className="card-image"></div>
       </div>
