@@ -2,6 +2,7 @@ import React, { createRef } from "react";
 import "./index.css";
 import Card from "../Card";
 import MobileCard from "../MobileCard";
+import FloatingMenu from "../FloatingMenu";
 class AllGames extends React.Component {
   mobileRef = createRef();
   pcRef = createRef();
@@ -12,6 +13,12 @@ class AllGames extends React.Component {
 
   scrollToMobile = () => {
     this.mobileRef.current.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
+  scrollToPC = () => {
+    this.pcRef.current.scrollIntoView({
       behavior: "smooth"
     });
   };
@@ -116,7 +123,10 @@ class AllGames extends React.Component {
             <MobileCard />
           </div>
         </div>
-        <div></div>
+        <FloatingMenu
+          scrollToMobile={this.scrollToMobile}
+          scrollToPC={this.scrollToPC}
+        />
       </div>
     );
   }

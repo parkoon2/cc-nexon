@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createRef } from "react";
 import "./index.css";
 import classNames from "classnames";
 import logo from "../../images/logo.png";
@@ -8,6 +8,8 @@ class Footer extends React.Component {
     languageToggle: false
   };
 
+  footerRef = createRef();
+
   toggleLanguage = () => {
     this.setState(prevState => {
       return {
@@ -16,11 +18,24 @@ class Footer extends React.Component {
     });
   };
 
+  componentDidMount() {
+    window.onscroll = e => {
+      console.log(this.footerRef.current.offsetTop);
+
+      console.log("window.scrollY", window.scrollY);
+      console.log("window.innerHeight", window.innerHeight);
+      // console.log(
+      //   "document.body.scrollHeight",
+      //   document.body.scrollHeight - window.scrollY
+      // );
+    };
+  }
+
   render() {
     const { languageToggle } = this.state;
 
     return (
-      <footer>
+      <footer ref={this.footerRef}>
         <div className="notice">
           <div className="title">
             <a href="/">

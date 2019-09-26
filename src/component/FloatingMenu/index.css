@@ -1,0 +1,41 @@
+.floating-menu {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.floating-menu div {
+  width: 110px;
+  height: 36px;
+  background: #fff;
+  line-height: 36px;
+  font-size: 13px;
+  padding-left: 13px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  color: #9fa1a7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.floating-menu div:hover {
+  background: #1f618d;
+  color: #fff;
+}
+
+.floating-menu div i {
+  margin-right: 7px;
+}
+
+.floating-menu .top {
+  background: transparent;
+  border: 2px solid gray;
+  box-sizing: border-box;
+  margin-top: 7px;
+}
+
+.floating-menu .top:hover {
+  background: transparent;
+  border-color: #1f618d;
+  color: #1f618d;
+}
