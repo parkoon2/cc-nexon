@@ -1,0 +1,61 @@
+.mobile-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 302px;
+  height: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 30px;
+}
+
+.mobile-card:hover {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+.mobile-card img {
+  width: 86px;
+  height: 86px;
+  border-radius: 15px;
+  margin: 0 14px;
+}
+
+.mobile-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86px;
+}
+
+.mobile-card .info .title {
+  letter-spacing: 0;
+}
+
+.mobile-card .info .title h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mobile-card .info .title h2 .event {
+  font-size: 14px;
+  color: lightskyblue;
+}
+
+.mobile-card .info .title .genre {
+  color: #9fa1a7;
+  font-size: 14px;
+}
+
+.mobile-card .info .shop .android {
+  color: #138d75;
+}
+
+.mobile-card .info .shop .ios {
+  color: #424949;
+}
+
+.mobile-card .info .shop i {
+  margin-right: 5px;
+}

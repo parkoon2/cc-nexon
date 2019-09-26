@@ -105,17 +105,33 @@
   color: #4a4257;
 }
 
-.all-games .pc .type h2.mobile {
+.all-games .pc .type h2.type-mobile {
   cursor: pointer;
   transition: 0.2s;
   color: #c7c8cc;
 }
 
-.all-games .pc .type h2.mobile:hover {
+.all-games .pc .type h2.type-mobile:hover {
   color: #1f618d;
 }
 
-.all-games .pc .card-container {
+.all-games .pc .pc-games {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* ------- All Games - Mobile ------- */
+.all-games .mobile .type {
+  display: inline-block;
+  margin-right: 24px;
+  font-size: 21px;
+  color: #4a4257;
+  margin-bottom: 24px;
+  margin-top: 52px;
+}
+
+.all-games .mobile .mobile-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
