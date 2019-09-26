@@ -3,6 +3,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 17px;
+  height: 62px;
+  box-sizing: border-box;
 }
 
 /* ------- Left Menu -------*/

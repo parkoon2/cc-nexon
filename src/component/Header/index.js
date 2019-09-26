@@ -3,10 +3,13 @@ import "./index.css";
 
 // Component
 import Hamburger from "../Hamburger";
+import SideMenu from "../SideMenu";
 
 const Header = () => {
   return (
     <header>
+      <SideMenu />
+
       <div className="menu">
         <Hamburger />
         <span className="menu-title">메뉴</span>
