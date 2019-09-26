@@ -1,27 +1,33 @@
-import React from "react";
+import React, { createRef } from "react";
 import "./App.css";
 
 // Components
 import Header from "./component/Header";
 import Banner from "./component/Banner";
-
-// Dummy Data
-import banners from "./dummy/banners";
 import Footer from "./component/Footer";
 import MyInfo from "./component/MyInfo";
 import Container from "./component/Shared/container";
 import AllGames from "./component/AllGame";
+
+// Dummy Data
+import banners from "./dummy/banners";
+
+// Context
+import { ScrollProvider } from "./context/scrollContext";
 
 function App() {
   return (
     <div>
       <Header />
       <Banner banners={banners} />
-      <Container>
-        <MyInfo />
-        <AllGames />
-      </Container>
-      <Footer />
+
+      <ScrollProvider>
+        <Container>
+          <MyInfo />
+          <AllGames />
+        </Container>
+        <Footer />
+      </ScrollProvider>
     </div>
   );
 }

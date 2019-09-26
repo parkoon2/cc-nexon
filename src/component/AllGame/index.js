@@ -31,7 +31,6 @@ class AllGames extends React.Component {
 
   render() {
     const { currentView } = this.state;
-
     return (
       <div className="all-games">
         <div className="header">

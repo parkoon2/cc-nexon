@@ -1,5 +1,7 @@
 import React, { createRef } from "react";
+import { useScroll } from "../../context/scrollContext";
 import "./index.css";
+
 class FloatingMenu extends React.Component {
   menuRef = createRef();
   state = {
@@ -14,24 +16,30 @@ class FloatingMenu extends React.Component {
     });
   };
 
-  //   componentDidMount() {
-  //     window.onscroll = e => {
-  //       console.log("window.scrollY");
-  //       console.log(
-  //         "document.body.scrollHeight",
-  //         document.body.scrollHeight - window.scrollY
-  //       );
-  //     };
-  //   }
-
-  componentWillUnmount() {}
-
   render() {
     const { visible } = this.state;
+    const { state } = this.props.context;
+
     return (
       <>
         {visible && (
-          <div className="floating-menu" ref={this.menuRef}>
+          <div
+            className="floating-menu"
+            ref={this.menuRef}
+            style={
+              state.isFooterInView
+                ? {
+                    position: "absolute",
+                    top: `${this.props.context.state.footerOffsetTop - 140}px`,
+                    right: "30px"
+                  }
+                : {
+                    position: "fixed",
+                    bottom: "30px",
+                    right: "30px"
+                  }
+            }
+          >
             <div className="game" onClick={this.props.scrollToPC}>
               <i class="fas fa-desktop"></i>
               <span>PC게임</span>
@@ -51,4 +59,4 @@ class FloatingMenu extends React.Component {
   }
 }
 
-export default FloatingMenu;
+export default useScroll(FloatingMenu);

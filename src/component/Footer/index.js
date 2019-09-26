@@ -2,6 +2,7 @@ import React, { createRef } from "react";
 import "./index.css";
 import classNames from "classnames";
 import logo from "../../images/logo.png";
+import { ScrollConsumer, useScroll } from "../../context/scrollContext";
 
 class Footer extends React.Component {
   state = {
@@ -19,15 +20,22 @@ class Footer extends React.Component {
   };
 
   componentDidMount() {
-    window.onscroll = e => {
-      console.log(this.footerRef.current.offsetTop);
+    const { actions } = this.props.context;
+    actions.setFooterOffsetTop(this.footerRef.current.offsetTop);
 
-      console.log("window.scrollY", window.scrollY);
-      console.log("window.innerHeight", window.innerHeight);
-      // console.log(
-      //   "document.body.scrollHeight",
-      //   document.body.scrollHeight - window.scrollY
-      // );
+    window.onresize = e => {
+      actions.setFooterOffsetTop(this.footerRef.current.offsetTop);
+    };
+
+    window.onscroll = e => {
+      if (
+        window.scrollY + window.innerHeight >
+        this.footerRef.current.offsetTop
+      ) {
+        actions.setFooterInView(true);
+      } else {
+        actions.setFooterInView(false);
+      }
     };
   }
 
@@ -98,4 +106,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+export default useScroll(Footer);
