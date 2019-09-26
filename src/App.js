@@ -13,7 +13,7 @@ import AllGames from "./component/AllGame";
 import banners from "./dummy/banners";
 
 // Context
-import { ScrollProvider } from "./context/scrollContext";
+import { AppProvider } from "./context";
 
 function App() {
   return (
@@ -21,13 +21,13 @@ function App() {
       <Header />
       <Banner banners={banners} />
 
-      <ScrollProvider>
+      <AppProvider>
         <Container>
           <MyInfo />
           <AllGames />
         </Container>
         <Footer />
-      </ScrollProvider>
+      </AppProvider>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { createRef } from "react";
-import { useScroll } from "../../context/scrollContext";
+import { useContext } from "../../context";
 import "./index.css";
 
 class FloatingMenu extends React.Component {
@@ -59,4 +59,4 @@ class FloatingMenu extends React.Component {
   }
 }
 
-export default useScroll(FloatingMenu);
+export default useContext(FloatingMenu);

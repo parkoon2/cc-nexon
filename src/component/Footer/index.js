@@ -2,7 +2,7 @@ import React, { createRef } from "react";
 import "./index.css";
 import classNames from "classnames";
 import logo from "../../images/logo.png";
-import { ScrollConsumer, useScroll } from "../../context/scrollContext";
+import { useContext } from "../../context";
 
 class Footer extends React.Component {
   state = {
@@ -106,4 +106,4 @@ class Footer extends React.Component {
   }
 }
 
-export default useScroll(Footer);
+export default useContext(Footer);

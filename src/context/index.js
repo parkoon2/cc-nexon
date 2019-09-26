@@ -1,10 +1,10 @@
 import React, { createContext } from "react";
 
-const scrollContext = createContext();
+const context = createContext();
 
-const { Provider, Consumer: ScrollConsumer } = scrollContext;
+const { Provider, Consumer } = context;
 
-class ScrollProvider extends React.Component {
+class AppProvider extends React.Component {
   state = {
     isFooterInView: false,
     footerOffsetTop: null
@@ -29,17 +29,17 @@ class ScrollProvider extends React.Component {
   }
 }
 
-const useScroll = WrappedComponent =>
-  class UseScroll extends React.Component {
+const useContext = WrappedComponent =>
+  class UseContext extends React.Component {
     render() {
       return (
-        <ScrollConsumer>
+        <Consumer>
           {context => {
             return <WrappedComponent context={context} />;
           }}
-        </ScrollConsumer>
+        </Consumer>
       );
     }
   };
 
-export { ScrollProvider, ScrollConsumer, useScroll };
+export { AppProvider, useContext };
