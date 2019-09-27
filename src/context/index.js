@@ -7,7 +7,8 @@ const { Provider, Consumer } = context;
 class AppProvider extends React.Component {
   state = {
     isFooterInView: false,
-    footerOffsetTop: null
+    footerOffsetTop: null,
+    isSideMenuVisible: false
   };
 
   actions = {
@@ -18,7 +19,8 @@ class AppProvider extends React.Component {
       this.setState({ footerOffsetTop: value }, () => {
         console.log(this.state.footerOffsetTop);
       });
-    }
+    },
+    setSideMenuVisible: value => this.setState({ isSideMenuVisible: value })
   };
 
   render() {

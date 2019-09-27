@@ -1,11 +1,17 @@
 import React from "react";
 import "./index.css";
-const Hamburger = () => (
-  <div className="hamburger">
+
+import { useContext } from "../../context";
+
+const Hamburger = ({ context }) => (
+  <div
+    className="hamburger"
+    onClick={() => context.actions.setSideMenuVisible(true)}
+  >
     <div></div>
     <div></div>
     <div></div>
   </div>
 );
 
-export default Hamburger;
+export default useContext(Hamburger);

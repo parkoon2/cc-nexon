@@ -17,18 +17,18 @@ import { AppProvider } from "./context";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Banner banners={banners} />
+    <AppProvider>
+      <div>
+        <Header />
+        <Banner banners={banners} />
 
-      <AppProvider>
         <Container>
           <MyInfo />
           <AllGames />
         </Container>
         <Footer />
-      </AppProvider>
-    </div>
+      </div>
+    </AppProvider>
   );
 }
 

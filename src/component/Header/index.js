@@ -5,10 +5,12 @@ import "./index.css";
 import Hamburger from "../Hamburger";
 import SideMenu from "../SideMenu";
 
+// Context
+
 const Header = () => {
   return (
     <header>
-      <SideMenu />
+      <SideMenu show />
 
       <div className="menu">
         <Hamburger />
