@@ -143,3 +143,12 @@
 .login .etc .find a:first-child {
   margin-right: 13px;
 }
+
+@media only screen and (max-width: 1412px) {
+  .my-info-body .recommend-card-list {
+    width: 483px;
+    color: red;
+    /* justify-content: space-between; */
+    /* flex: 1; */
+  }
+}
