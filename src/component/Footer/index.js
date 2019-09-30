@@ -51,9 +51,9 @@ class Footer extends React.Component {
             </a>
           </div>
           <div className="social-icons">
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-youtube"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-twitter"></i>
           </div>
         </div>
         <nav>
@@ -82,7 +82,7 @@ class Footer extends React.Component {
             </ul>
             <div className="selected-language">
               <span>KOREA</span>
-              <i class="fas fa-globe"></i>
+              <i className="fas fa-globe"></i>
             </div>
           </div>
         </nav>

@@ -28,9 +28,9 @@ class MyInfo extends React.Component {
             <div className="login-sns">
               <span>다른 계정 간편 로그인</span>
               <div className="social-icons">
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-youtube"></i>
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-twitter"></i>
               </div>
             </div>
             <div className="etc">

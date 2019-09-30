@@ -45,8 +45,8 @@ class AllGames extends React.Component {
                 onChange={this.handleViewChange}
               ></input>
               <span>
-                <label for="thumbnail">
-                  <i class="fas fa-th-large"></i>
+                <label htmlFor="thumbnail">
+                  <i className="fas fa-th-large"></i>
                 </label>
               </span>
 
@@ -58,15 +58,15 @@ class AllGames extends React.Component {
                 onChange={this.handleViewChange}
               ></input>
               <span>
-                <label for="list">
-                  <i class="fas fa-list"></i>
+                <label htmlFor="list">
+                  <i className="fas fa-list"></i>
                 </label>
               </span>
             </div>
           </div>
           <div className="search-bar">
             <input placeholder="게임명 검색"></input>
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </div>
         </div>
         <div className="filter">

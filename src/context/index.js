@@ -16,9 +16,7 @@ class AppProvider extends React.Component {
       this.setState({ isFooterInView: value });
     },
     setFooterOffsetTop: value => {
-      this.setState({ footerOffsetTop: value }, () => {
-        console.log(this.state.footerOffsetTop);
-      });
+      this.setState({ footerOffsetTop: value });
     },
     setSideMenuVisible: value => this.setState({ isSideMenuVisible: value })
   };

@@ -41,15 +41,15 @@ class FloatingMenu extends React.Component {
             }
           >
             <div className="game" onClick={this.props.scrollToPC}>
-              <i class="fas fa-desktop"></i>
+              <i className="fas fa-desktop"></i>
               <span>PC게임</span>
             </div>
             <div className="game" onClick={this.props.scrollToMobile}>
-              <i class="fas fa-mobile-alt"></i>
+              <i className="fas fa-mobile-alt"></i>
               <span>모바일게임</span>
             </div>
             <div className="top" onClick={this.scrollToTop}>
-              <i class="fas fa-arrow-up"></i>
+              <i className="fas fa-arrow-up"></i>
               <span>TOP</span>
             </div>
           </div>

@@ -19,7 +19,7 @@ const Card = props => {
         </div>
       </div>
       <div className="type">
-        <i class="fas fa-desktop"></i>
+        <i className="fas fa-desktop"></i>
         <span>RPG</span>
       </div>
     </div>

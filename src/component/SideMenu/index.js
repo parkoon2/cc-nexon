@@ -60,47 +60,47 @@ const SideMenu = ({ context }) => (
       <div className="side-menu-footer">
         <div className="col1">
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>내정보</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>이벤트</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>넥슨캐시</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>보안센터</span>
           </div>
         </div>
         <div className="col2">
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>공지사항</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>넥슨플레이</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>고객센터</span>
           </div>
         </div>
         <div className="col3">
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>넥슨달력</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>스쿨존</span>
           </div>
           <div className="item">
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-info-circle"></i>
             <span>전체서비스</span>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Header = ({ context }) => {
           context.actions.setSideMenuVisible(true);
         }}
       >
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
         <span className="menu-title">메뉴</span>
       </div>
       <div className="title">nexon</div>

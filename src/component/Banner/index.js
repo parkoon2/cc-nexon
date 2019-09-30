@@ -76,6 +76,7 @@ class Banner extends React.Component {
     const { processBar, currentBanner } = this.state;
     return this.props.banners.map(({ background }, index) => (
       <div
+        key={index}
         className={classNames("banner-btn", {
           selected: currentBanner === index
         })}
