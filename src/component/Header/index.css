@@ -33,6 +33,12 @@ header .title {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+header .title:hover {
+  color: #1f618d;
 }
 
 /* ------- Right Buttons -------*/
@@ -60,4 +66,21 @@ header .title {
   border: 2px solid #000;
   padding: 4px 10px;
   border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.right-btns .register {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right-btns .register:hover {
+  color: #1f618d;
+}
+
+.right-btns .login:hover {
+  border-color: #1f618d;
+  color: #fff;
+  background: #1f618d;
 }
