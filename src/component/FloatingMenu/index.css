@@ -39,3 +39,18 @@
   border-color: #1f618d;
   color: #1f618d;
 }
+
+@media only screen and (max-width: 1440px) {
+  .floating-menu div {
+    width: 36px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .floating-menu div i {
+    margin: 0;
+  }
+  .floating-menu div span {
+    display: none;
+  }
+}
