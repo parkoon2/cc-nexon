@@ -13,11 +13,11 @@ class MyInfo extends React.Component {
 
         <section className="my-info-body">
           <div className="recommend-card-list">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            <Card width="152px"></Card>
+            <Card width="152px"></Card>
+            <Card width="152px"></Card>
+            <Card width="152px"></Card>
+            <Card width="152px"></Card>
           </div>
           <div className="login">
             <div className="login-btn">NEXON ID 로그인</div>

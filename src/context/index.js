@@ -37,7 +37,7 @@ const useContext = WrappedComponent =>
       return (
         <Consumer>
           {context => {
-            return <WrappedComponent context={context} />;
+            return <WrappedComponent context={context} {...this.props} />;
           }}
         </Consumer>
       );

@@ -12,6 +12,10 @@
 }
 
 .my-info-title span {
+  cursor: pointer;
+}
+.my-info-title span:hover {
+  color: #1f618d;
 }
 
 .my-info-body {
@@ -20,12 +24,16 @@
 
 .my-info-body .recommend-card-list {
   display: flex;
-  justify-content: space-between;
+  flex: 2;
   margin-right: 20px;
   width: 805px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 319px;
 }
 .my-info-body .login {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
