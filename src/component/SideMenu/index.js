@@ -11,6 +11,7 @@ const SideMenu = ({ context }) => (
         <div
           className="close-btn"
           onClick={() => {
+            document.body.style.overflow = "visible";
             context.actions.setSideMenuVisible(false);
           }}
         >
