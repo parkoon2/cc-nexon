@@ -10,8 +10,6 @@ import { useContext } from "../../context";
 const Header = ({ context }) => {
   return (
     <header>
-      <SideMenu show />
-
       <div
         className="menu"
         onClick={() => {

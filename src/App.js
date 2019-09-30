@@ -8,6 +8,7 @@ import Footer from "./component/Footer";
 import MyInfo from "./component/MyInfo";
 import Container from "./component/Shared/container";
 import AllGames from "./component/AllGame";
+import SideMenu from "./component/SideMenu";
 
 // Dummy Data
 import banners from "./dummy/banners";
@@ -19,6 +20,7 @@ function App() {
   return (
     <AppProvider>
       <div>
+        <SideMenu />
         <Header />
         <Banner banners={banners} />
 

@@ -5,8 +5,15 @@ import GameGroup from "../GameGroup";
 import { useContext } from "../../context";
 
 const SideMenu = ({ context }) => (
-  <div className={classNames("dim", { on: context.state.isSideMenuVisible })}>
-    <div className="side-menu">
+  <>
+    <div
+      className={classNames("dim", { on: context.state.isSideMenuVisible })}
+    ></div>
+    <div
+      className={classNames("side-menu", {
+        on: context.state.isSideMenuVisible
+      })}
+    >
       <div className="close">
         <div
           className="close-btn"
@@ -99,7 +106,7 @@ const SideMenu = ({ context }) => (
         </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default useContext(SideMenu);

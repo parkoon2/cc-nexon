@@ -14,19 +14,28 @@
   display: inline-block;
 }
 
-.dim .side-menu {
-  position: relative;
+.side-menu {
+  z-index: 100;
+  position: absolute;
+  left: -440px;
   width: 440px;
-  height: 100%;
+  height: 100vh;
   background: #fff;
+  opacity: 0;
+  transition: 0.2s linear;
 }
 
-.dim .side-menu .close {
+.side-menu.on {
+  left: 0;
+  opacity: 1;
+}
+
+.side-menu .close {
   height: 62px;
   border-bottom: 1px solid lightgray;
 }
 
-.dim .side-menu .close .close-btn {
+.side-menu .close .close-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -36,11 +45,11 @@
   cursor: pointer;
 }
 
-.dim .side-menu .close .close-btn:hover span {
+.side-menu .close .close-btn:hover span {
   background: #1f618d;
 }
 
-.dim .side-menu .close .close-btn span {
+.side-menu .close .close-btn span {
   position: absolute;
   width: 20px;
   height: 2px;
@@ -48,11 +57,11 @@
   transition: 0.2s;
 }
 
-.dim .side-menu .close .close-btn span:first-child {
+.side-menu .close .close-btn span:first-child {
   transform: rotate(-45deg);
 }
 
-.dim .side-menu .close .close-btn span:last-child {
+.side-menu .close .close-btn span:last-child {
   transform: rotate(45deg);
 }
 
