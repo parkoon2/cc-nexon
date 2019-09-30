@@ -10,6 +10,16 @@ header {
 /* ------- Left Menu -------*/
 .menu {
   display: flex;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: #1f618d;
+}
+
+.menu i {
+  font-size: 18px;
 }
 
 .menu .menu-title {

@@ -2,18 +2,24 @@ import React from "react";
 import "./index.css";
 
 // Component
-import Hamburger from "../Hamburger";
 import SideMenu from "../SideMenu";
 
 // Context
+import { useContext } from "../../context";
 
-const Header = () => {
+const Header = ({ context }) => {
   return (
     <header>
       <SideMenu show />
 
-      <div className="menu">
-        <Hamburger />
+      <div
+        className="menu"
+        onClick={() => {
+          document.body.style.overflow = "hidden";
+          context.actions.setSideMenuVisible(true);
+        }}
+      >
+        <i class="fas fa-bars"></i>
         <span className="menu-title">메뉴</span>
       </div>
       <div className="title">nexon</div>
@@ -28,4 +34,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default useContext(Header);
