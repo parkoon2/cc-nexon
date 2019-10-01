@@ -20,26 +20,28 @@
 
 .my-info-body {
   display: flex;
+  justify-content: space-between;
 }
 
 .my-info-body .recommend-card-list {
   display: flex;
-  flex: 2;
+  /* flex: 2; */
   margin-right: 20px;
-  width: 805px;
+  width: 810px;
   flex-wrap: wrap;
-  overflow: hidden;
-  height: 319px;
+  justify-content: space-between;
+  /* overflow: hidden;
+  height: 319px; */
 }
 .my-info-body .login {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #fff;
   padding: 20px;
-  width: 465px;
+  width: 410px;
 }
 
 .login .login-btn {
@@ -146,9 +148,10 @@
 
 @media only screen and (max-width: 1412px) {
   .my-info-body .recommend-card-list {
-    width: 483px;
-    color: red;
-    /* justify-content: space-between; */
-    /* flex: 1; */
+    width: 490px;
+  }
+  .my-info-body .recommend-card-list .card-box:nth-child(4),
+  .card-box:nth-child(5) {
+    display: none;
   }
 }

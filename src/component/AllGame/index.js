@@ -93,11 +93,11 @@ class AllGames extends React.Component {
             </h2>
           </div>
           <div className="pc-games">
-            <Card width="302px" mb />
-            <Card width="302px" mb />
-            <Card width="302px" mb />
-            <Card width="302px" mb />
-            <Card width="302px" mb />
+            <Card mb />
+            <Card mb />
+            <Card mb />
+            <Card mb />
+            <Card mb />
           </div>
         </div>
         <div className="mobile" ref={this.mobileRef}>

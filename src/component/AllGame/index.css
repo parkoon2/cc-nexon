@@ -67,6 +67,7 @@
   padding: 24px 29px;
   margin: 29px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -77,6 +78,7 @@
   border-radius: 17px;
   padding: 5px 9px;
   transition: 0.2s;
+  margin-bottom: 7px;
 }
 
 .all-games .filter a:hover {
@@ -118,6 +120,12 @@
 .all-games .pc .pc-games {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.all-games .pc .pc-games .card-box {
 }
 
 /* ------- All Games - Mobile ------- */
@@ -134,4 +142,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1412px) {
+  .all-games .pc .card-box {
+    width: 32%;
+  }
 }
