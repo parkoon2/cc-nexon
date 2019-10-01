@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cc-nexon/static/css/main.484ec243.chunk.css",
+    "main.js": "/cc-nexon/static/js/main.e6cadef5.chunk.js",
+    "main.js.map": "/cc-nexon/static/js/main.e6cadef5.chunk.js.map",
+    "runtime-main.js": "/cc-nexon/static/js/runtime-main.9ecd5d14.js",
+    "runtime-main.js.map": "/cc-nexon/static/js/runtime-main.9ecd5d14.js.map",
+    "static/js/2.c22d2b4c.chunk.js": "/cc-nexon/static/js/2.c22d2b4c.chunk.js",
+    "static/js/2.c22d2b4c.chunk.js.map": "/cc-nexon/static/js/2.c22d2b4c.chunk.js.map",
+    "index.html": "/cc-nexon/index.html",
+    "precache-manifest.c7395c8374ea54631074e92861d8fd4f.js": "/cc-nexon/precache-manifest.c7395c8374ea54631074e92861d8fd4f.js",
+    "service-worker.js": "/cc-nexon/service-worker.js",
+    "static/css/main.484ec243.chunk.css.map": "/cc-nexon/static/css/main.484ec243.chunk.css.map",
+    "static/media/mobile-card.png": "/cc-nexon/static/media/mobile-card.0483276f.png",
+    "static/media/index.css": "/cc-nexon/static/media/sample-card.9f42935e.jpg"
+  }
+}
