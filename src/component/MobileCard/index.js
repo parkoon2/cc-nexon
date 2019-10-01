@@ -4,7 +4,7 @@ import "./index.css";
 const MobileCard = () => {
   return (
     <div className="mobile-card">
-      <img src={require("../../images/mobile-card.png")} alt="game-image" />
+      <img src={require("../../images/mobile-card.png")} alt="game" />
       <div className="info">
         <div className="title">
           <h2>

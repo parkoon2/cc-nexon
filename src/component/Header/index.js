@@ -1,9 +1,6 @@
 import React from "react";
 import "./index.css";
 
-// Component
-import SideMenu from "../SideMenu";
-
 // Context
 import { useContext } from "../../context";
 
